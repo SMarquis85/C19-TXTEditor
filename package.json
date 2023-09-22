@@ -2,22 +2,24 @@
   "name": "c19-txteditor",
   "version": "1.0.0",
   "description": "Challenge 19 - Boot Camp",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "",
+    "start": "",
+    "server": "cd server && npm run server",
+    "client": "cd client && npm start",
+    "build": "",
+    "install": "cd server && npm install && cd ../client && npm install"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "babel": "^6.23.0",
-    "concurrently": "^8.2.1",
-    "express": "^4.18.2",
-    "idb": "^7.1.1"
-  },
   "devDependencies": {
-    "css-loader": "^6.8.1",
-    "webpack": "^5.88.2",
-    "webpack-dev-server": "^4.15.1",
-    "webpack-pwa-manifest": "^4.3.0"
+    "concurrently": "^8.2.1",
+    "nodemon": "^3.0.1"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "if-env": "^1.0.4"
   }
 }
