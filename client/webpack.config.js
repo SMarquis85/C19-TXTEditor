@@ -22,6 +22,10 @@ module.exports = () => {
         template: './index.html',
         title: 'JATE'
       }),
+      new MiniCssExtractPlugin({ // Add MiniCssExtractPlugin for CSS
+        filename: '[name].css',
+        chunkFilename: '[id].css',
+      }),
       new InjectManifest({
         swSrc: './src-sw.js',
         swDest: 'src-sw.js'
@@ -39,7 +43,7 @@ module.exports = () => {
         icons: [
           {
             src: path.resolve('src/images/logo.png'),
-            sizes: [96, 128, 192, 256, 384, 512], //Various image sizes
+            sizes: [96, 128, 192, 256, 384, 512],
             destination: path.join('assets', 'icons'),
           }
         ]
@@ -50,7 +54,7 @@ module.exports = () => {
       rules: [
         {
           test: /\.css$/i,
-          use: ['style-loader', 'css-loader'],
+          use: [MiniCssExtractPlugin.loader, 'css-loader'], // Use MiniCssExtractPlugin for CSS
         },
         {
           test: /\.m?js$/,
