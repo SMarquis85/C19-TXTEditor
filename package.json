@@ -4,12 +4,11 @@
   "description": "Challenge 19 - Boot Camp",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start:dev": "",
-    "start": "",
+    "start:dev": "concurrently \"cd server && npm run server\" \"cd client && npm run dev\"",
+    "start": "npm run build && cd server && node server.js",
     "server": "cd server && npm run server",
     "client": "cd client && npm start",
-    "build": "",
+    "build": "cd client && npm run build",
     "install": "cd server && npm install && cd ../client && npm install"
   },
   "author": "",
