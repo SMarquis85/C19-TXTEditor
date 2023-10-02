@@ -9,7 +9,7 @@
     "server": "cd server && npm run server",
     "client": "cd client && npm start",
     "build": "cd client && npm run build",
-    "install": "cd server && npm install && cd ../client && npm install"
+    "install": "cd client && npm install"
   },
   "author": "",
   "license": "ISC",
