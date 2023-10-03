@@ -5,37 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>J.A.T.E</title>
     
-      <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/codemirror.min.css">
-      </link>
-      <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/codemirror.min.js">
-      </script>
-      <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/mode/javascript/javascript.min.js">
-      </script>
-      <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/theme/monokai.min.css">
-      </link>
+    <!-- Include CodeMirror styles and scripts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/codemirror.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/mode/javascript/javascript.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/theme/monokai.min.css">
   </head>
   <body>
     <nav id="navbar">
       <div class="nav-btn">
         <a class="btn btn-sm btn-dark" id="buttonInstall" role="button">Install!</a>
       </div>
-     <h1> Just Another Text Editor</h1>
-     
-      <div class="navbar-brand" 
-            ><img src="./assets/icons/icon_96x96.png"
-          /></div>
+      <h1>Just Another Text Editor</h1>
+      <div class="navbar-brand">
+        <img src="./assets/icons/icon_96x96.png" />
+      </div>
     </nav>
 
     <main id="main">
-      <div>${header}</div>
+      <div id="headerContainer">
+        <!-- Your header content here -->
+      </div>
       <div class="loading-container">
         <div class="loading-spinner"></div>
       </div>
     </main>
     
+    <!-- Create a container for the CodeMirror editor -->
+    <div id="editor"></div>
+
+    <script>
+      const header = `
+        /*
+           _____  ____________
+          / /   |/_  __/ ____/
+       __  / / /| | / / / __/   
+      / /_/ / ___ |/ / / /___   
+     ____/_/  |_/_/ /_____/   
+     just another text editor
+        */                          
+      `;
+    
+      const headerContainer = document.getElementById('headerContainer');
+      if (headerContainer) {
+        headerContainer.innerHTML = header;
+      }
+
+      // Initialize CodeMirror on the "editor" div
+      const editor = CodeMirror(document.getElementById('editor'), {
+        mode: 'javascript', // Set the syntax mode (e.g., JavaScript)
+        theme: 'monokai',   // Set the theme
+        lineNumbers: true   // Show line numbers (optional)
+      });
+
+      // You can set initial content for the editor if needed
+      editor.setValue('function greet() {\n  console.log("Hello, world!");\n}');
+    </script>
   </body>
 </html>
