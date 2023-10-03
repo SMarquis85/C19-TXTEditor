@@ -1,8 +1,8 @@
 {
-  "name": "c19-txteditor",
+  "name": "JATE",
   "scripts": {
     "dev": "webpack-dev-server",
-    "build": "webpack --mode production",
+    "build": "webpack",
     "start": "node server.js"
   },
   "author": "2U",
