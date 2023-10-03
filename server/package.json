@@ -1,11 +1,10 @@
 {
-  "name": "server",
+  "name": "c19-txteditor",
   "version": "1.0.0",
-  "description": "",
+  "description": "Challenge 19 - Boot Camp",
   "main": "server.js",
+  
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
     "server": "nodemon server.js --ignore client"
   },
   "keywords": [],

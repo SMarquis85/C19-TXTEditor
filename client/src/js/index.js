@@ -2,6 +2,7 @@ import { Workbox } from 'workbox-window';
 import Editor from './editor';
 import './database';
 import '../css/style.css';
+import { header } from './path-to-header-file';
 
 const main = document.querySelector('#main');
 main.innerHTML = '';
