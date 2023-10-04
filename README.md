@@ -91,7 +91,7 @@ License used for this project - MIT
 
 https://rocky-thicket-31570-689644e45c40.herokuapp.com/
 
-At this time, there's an error when trying to push my assigment to Heroku. (It only works locally. (http://localhost:3000/))
+At this time, there's an error when trying to push my assignment to Heroku. (It only works locally. (http://localhost:3000/))
 
 ## Screenshots:
 
