@@ -95,7 +95,7 @@ At this time, there's an error when trying to push my assigment to Heroku. (It o
 
 ## Screenshots
 
-![images/LocalHost2.png](images/LocalHost2.png)
+![client/src/images/LocalHost2.png](client\src\images\LocalHost2.png) 
 
 ## Github Repository Link:
 
