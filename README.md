@@ -80,7 +80,7 @@ License used for this project - MIT
 
   ## Final Work Review
 
-**"Always leave the code a little cleaner than when you found it."**  This action was applied to ALL JAVASCRIPT files. To create this assignment, I used Lawrence Wilson's Audiobook. References we're found on Google, multiple websites including W3Schools, DEV, GitHub, Insomnia and Tutorialspoint. YouTube tutorials were helpful as well as all ZOOM recordings (of previous classes). Looks much cleaner, organised and easier to find what you are looking for. I also received the help of my tutor, Erik Hoversten. Erik and I are currently working on deployment to Heroku.
+**"Always leave the code a little cleaner than when you found it."**  This action was applied to ALL JAVASCRIPT files. To create this assignment, I used Lawrence Wilson's Audiobook. References we're found on Google, multiple websites including W3Schools, DEV, GitHub, Insomnia and Tutorialspoint. YouTube tutorials were helpful as well as all ZOOM recordings (of previous classes). Looks much cleaner, organised and easier to find what you are looking for. I also received the help of my tutor, Erik Hoversten. Erik and I were able to fix the Heroku built issue.
 
 > **(CARL-VIRT-FSF-PT-04-2023, Challenge 19 / README.md 2023)**
 
@@ -90,12 +90,6 @@ License used for this project - MIT
 ## Heroku Link:
 
 https://rocky-thicket-31570-689644e45c40.herokuapp.com/
-
-At this time, there's an error when trying to push my assignment to Heroku. (It only works locally. (http://localhost:3000/))
-
-## Screenshots:
-
-![client/src/images/LocalHost2.png](client/src/images/LocalHost2.png) 
 
 ## Github Repository Link:
 
