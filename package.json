@@ -8,17 +8,14 @@
     "start": "npm run build && cd server && node server.js",
     "server": "cd server node server.js --ignore client",
     "build": "cd client && npm run build",
-    "install": "cd client && npm install",
+    "install": "cd client && npm install && cd ../server && npm install",
     "client": "cd client && npm start"
   },
-  "engines": {
-    "node": "14.x" 
-  },
+
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1",
     "if-env": "^1.0.4",
     "serve": "^13.0.2"
   },
