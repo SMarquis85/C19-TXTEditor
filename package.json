@@ -11,9 +11,6 @@
     "install": "cd client && npm install && cd ../server && npm install",
     "client": "cd client && npm start"
   },
-  "engines": {
-    "node": "14.x" 
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
